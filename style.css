@@ -1,0 +1,298 @@
+
+
+html, body {
+
+    margin: 0rem ;
+    padding: 0rem;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #f8efce;
+    overflow-x: hidden ;
+    height: 100vh;
+
+}
+
+nav{
+    display: flex;
+    background-color: white;
+    
+    justify-content: center;
+    height: 7vh;
+    width: 100%
+    
+}
+.nav-content{
+    display: flex;
+    background-color: white;
+    
+    justify-content: center;
+    height: 7vh;
+    width: 100%
+}
+
+.burger{
+    width: 50px;
+    height: 5px;
+    background-color: black;
+    margin-top: 0.5rem;
+    border-radius: 10px;
+    margin-top: .1rem;
+    display: none;
+   
+  
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    margin: 1rem;
+}
+
+
+
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+   
+    
+
+  }
+  .active {
+    background-color: #717171;
+  }
+  
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  .big-part{
+    display: flex;
+
+  }
+  
+  #left-headline-container{
+    flex: 1;
+    
+  }
+  .aroye{
+   
+    height: 60vh;
+    width: 40vw ;
+  }
+
+  .headline{
+    
+    font-size: 9rem;
+    font-weight: 600;
+    margin: 5rem 2rem 1rem 2rem;
+    line-height: 7.5rem;
+  }
+
+  .sub-headline{
+    margin: 0rem 2rem 1rem 2rem;
+    font-size: 2.3rem;
+  
+}
+
+.icon{
+    display: flex;
+    margin: 4rem 2rem 0rem 2rem;
+}
+    
+
+  #right-images{
+    flex: 1;
+  }
+
+
+
+  #small-part{
+    display: flex;
+    align-items: center;
+    
+    
+  }
+
+  .big-icon{
+    margin: 0.2rem;
+    
+    width: 20%;
+    height: 17vh;
+
+}
+hr{
+    margin-left: 2rem
+}
+
+.enter-market{
+    
+    
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    transform: translateX(100px);
+}
+
+
+@media (max-width: 1068px) {
+    
+    .enter-market{
+    
+        
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 10px;
+        background-color: white;
+        transform: translateX(50px);
+        
+        
+    }
+    
+}
+
+@media (max-width: 768px) { 
+  
+
+    .big-part{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    
+      }
+
+      #small-part{
+        display: flex;
+        flex-direction:column-reverse ;
+        margin: 11rem 2rem 0rem 2rem;
+        
+        
+
+        
+      }
+
+
+      .icon{
+        
+       display: flex;
+       justify-content: center;
+       
+       
+      
+    }
+
+    .big-icon{
+        margin: 0.2rem;
+        
+       
+    }
+
+      .enter-market{
+    
+        
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 10px;
+        background-color: white;
+        transform: translateX(-50px);
+        
+        
+    }
+    .headline{
+
+    font-size: 9rem;
+    font-weight: 600;
+    margin: 5rem 2rem 1rem 2rem;
+    line-height: 7.5rem;
+
+    
+    }
+      
+    .sub-headline{
+        margin: 0rem 2rem 1rem 2rem;
+        font-size: 2.3rem;
+        width: 40vw;
+    }
+    
+    
+    hr{
+       display: none;
+    }
+
+
+}
+
+
+@media (max-width: 568px) {
+    
+ 
+    .headline{
+
+        font-size: 7rem;
+        font-weight: 600;
+        margin: 5rem 2rem 1rem 2rem;
+        line-height: 5.0rem;
+    
+        
+        }
+          
+        .sub-headline{
+            margin: 0rem 2rem 1rem 2rem;
+            font-size: 1.7rem;
+            width: 50%
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav-content{
+            color: white;
+            position: absolute;
+            right: 0px;
+            height: 92vh;
+            top: 8vh;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            transform: translateX(100%);
+            transition: transform 0.5s ease-in;
+            z-index: 2;
+            color: aliceblue;
+        }
+        
+        .nav-content-active{
+            transform: translateX(0%);
+          }
+       
+
+        .burger{
+            width: 50px;
+            height: 5px;
+            background-color: black;
+            margin-top: 0.5rem;
+            border-radius: 10px;
+            margin-top: .1rem;
+            display: block;
+           
+          
+        }
+}
+
+

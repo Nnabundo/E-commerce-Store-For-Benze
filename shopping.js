@@ -19,7 +19,7 @@ function displayItem(){
         <div class="each-item" id=${id} >
                 <div>${name}</div>
                 <div>
-                    <img src= ${image} alt="" height="250" >
+                    <img src= ${image} alt="" width="180" >
                 </div>
                 <div class="flex-this">
                     <div>$${cost}</div>

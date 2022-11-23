@@ -9,107 +9,106 @@ html, body {
     background-color: #f8efce;
     overflow-x: hidden ;
     height: 100vh;
+    width: 100vw;
 
 }
 
 nav{
     display: flex;
     background-color: white;
-    
+    align-items: center;
     justify-content: center;
-    height: 7vh;
-    width: 100%
+    height: 10vh;
+    width: 100%;
+    margin-bottom: 2rem;
+    
     
 }
-.nav-content{
-    display: flex;
-    background-color: white;
-    
-    justify-content: center;
-    height: 7vh;
-    width: 100%
-}
 
-.burger{
-    width: 50px;
-    height: 5px;
-    background-color: black;
-    margin-top: 0.5rem;
-    border-radius: 10px;
-    margin-top: .1rem;
-    display: none;
-   
+
+.main{
+      margin: 0rem 0rem;
+      width: 100%;
+      min-height: 0vh ;
+      
+      
+    }
+
   
-}
-
-a{
-    text-decoration: none;
-    color: black;
-    margin: 1rem;
-}
-
-
-
-
-.dot {
-    height: 12px;
-    width: 12px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-   
-    
-
-  }
-  .active {
-    background-color: #717171;
-  }
-  
-  
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
 
   .big-part{
     display: flex;
+    width: 100%;
+    
+    min-height: 0vh;
+    
+    
+    
 
   }
   
   #left-headline-container{
     flex: 1;
+  
+    width: 100%;
+    min-height: 0vh;
+    
+    margin: 2rem 0rem;
+  
+
     
   }
   .aroye{
    
-    height: 60vh;
-    width: 40vw ;
+    min-height: 0vh;
+    width: 100% ;
+    
+   
+    
+    
+
+    
+  }
+
+  .headline-box{
+    
+    
+    margin: 1rem 2rem  1rem 2rem;
+    min-height: 0vh;
+    
+    
+    
   }
 
   .headline{
+    font-size: 12vw;
+    line-height: .7;
+    min-height: 0vh;
     
-    font-size: 9rem;
-    font-weight: 600;
-    margin: 5rem 2rem 1rem 2rem;
-    line-height: 7.5rem;
+    margin: 0rem 0rem;
+    
   }
 
+
+
   .sub-headline{
-    margin: 0rem 2rem 1rem 2rem;
-    font-size: 2.3rem;
+    margin: 1rem 2rem 2rem;
+    font-size: 2vw;
+    min-height: 0vh;
+    
+   
+   
+    
+    
   
 }
 
+
+
+
 .icon{
     display: flex;
-    margin: 4rem 2rem 0rem 2rem;
+    margin: 2rem 2rem 0rem ;
 }
     
 
@@ -121,15 +120,31 @@ a{
 
   #small-part{
     display: flex;
+    gap: 1.5rem;
     align-items: center;
+    margin: 0rem 2rem ;
+    min-height: 0vh;
+    width: 100%;
+    
+    
     
     
   }
 
-  .big-icon{
+  .icon{
+  
+    
+    padding: 0rem;
+    width: 48%;
+    margin: 0rem 0rem;
+  }
+
+  .big-icon p{
     margin: 0.2rem;
     
-    width: 20%;
+    font-size: 1.7vw;
+    
+    width: auto;
     height: 17vh;
 
 }
@@ -137,51 +152,90 @@ hr{
     margin-left: 2rem
 }
 
+.enter-market a{
+text-decoration: none;
+color: black;
+}
+
 .enter-market{
     
     
     padding: 1rem 2rem;
+    font-size: 2vw;
     border: none;
     border-radius: 10px;
     background-color: white;
     transform: translateX(100px);
-}
-
-
-@media (max-width: 1068px) {
     
-    .enter-market{
-    
-        
-        padding: 1rem 2rem;
-        border: none;
-        border-radius: 10px;
-        background-color: white;
-        transform: translateX(50px);
-        
-        
-    }
+
     
 }
 
-@media (max-width: 768px) { 
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+ 
   
 
+}
+.active {
+  background-color: #717171;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+  .sub-headline{
+    margin: 1.5rem 2rem 2rem;
+    
+    font-size: 2vw;
+   
+    
+  }
+}
+
+
+@media (max-width: 868px) { 
+  
+    .main{
+      margin: 0rem 0rem;
+      
+      
+    }
     .big-part{
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
+        margin: 0rem 0rem;
     
       }
 
       #small-part{
         display: flex;
         flex-direction:column-reverse ;
-        margin: 11rem 2rem 0rem 2rem;
-        
-        
-
-        
+        margin: 0rem 2rem ;
+         
       }
 
 
@@ -211,50 +265,129 @@ hr{
         
         
     }
-    .headline{
 
-    font-size: 9rem;
-    font-weight: 600;
-    margin: 5rem 2rem 1rem 2rem;
-    line-height: 7.5rem;
-
+    .headline-box{
     
-    }
+    
+      margin: 2rem;
       
-    .sub-headline{
-        margin: 0rem 2rem 1rem 2rem;
-        font-size: 2.3rem;
-        width: 40vw;
+      
     }
+    
+    .headline{
+      font-size: 17vw;
+      line-height: .7;
+      
+    }
+  
+  
+  
+    .sub-headline{
+      margin: 2rem 2rem 2rem;
+      
+      font-size: 3.8vw;
+     
+      
+    }
+  
     
     
     hr{
        display: none;
     }
 
+    nav{
+      display: flex;
+      background-color: white;
+      align-items: center;
+      justify-content: center;
+      height: 10vh;
+      width: 100%;
+      margin-bottom: 1rem;
+      
+      
+  }
+    .car{
+      width: 100%;
+      margin: 13rem 0rem 0rem;
+      
+      
+    }
+
+    #small-part{
+      display: flex;
+      align-items: center;
+      margin: 2rem 2rem 2rem ;
+     
+      
+    }
+  
+
 
 }
 
 
+@media (max-width: 768px){
+
+  .headline{
+    font-size: 18vw;
+    line-height: .7;
+    
+  }
+
+
+
+  .sub-headline{
+    margin: 0rem 2rem 2rem;
+    
+    font-size: 3vw;
+   
+    
+  }
+
+  .car{
+    width: 100%;
+    margin: 1rem 0rem 0rem;
+    
+    
+  }
+
+  #small-part{
+    display: flex;
+    align-items: center;
+    margin: 1rem 2rem 2rem ;
+    
+    
+    
+  }
+}
+
+
+
+
 @media (max-width: 568px) {
+  .headline-box{
     
+    
+    margin: 2rem;
+    
+    
+  }
  
-    .headline{
-
-        font-size: 7rem;
-        font-weight: 600;
-        margin: 5rem 2rem 1rem 2rem;
-        line-height: 5.0rem;
+  .headline{
+    font-size: 17vw;
+    line-height: .7;
     
-        
-        }
-          
-        .sub-headline{
-            margin: 0rem 2rem 1rem 2rem;
-            font-size: 1.7rem;
-            width: 50%
-        }
+  }
 
+
+
+  .sub-headline{
+    
+      
+    font-size: 3.7vw;
+    
+  }
         nav{
             display: flex;
             justify-content: space-around;
@@ -293,6 +426,77 @@ hr{
            
           
         }
+
+
+        .car{
+          width: 100%;
+          
+          
+          
+        }
+    
+        #small-part{
+          display: flex;
+          align-items: center;
+          margin: 1rem 2rem 2rem ;
+         
+          
+          
+          
+        }
 }
 
+@media (max-width: 425px) {
+  
+ 
+
+  .car{
+    width: 100%;
+    
+    
+    
+  }
+
+  #small-part{
+    display: flex;
+    align-items: center;
+    
+   
+    
+    
+  }
+
+  .headline{
+    font-size: 20vw;
+    line-height: .7;
+    
+  }
+
+
+
+  .sub-headline{
+    
+      
+    font-size: 4vw;
+    
+  }
+
+  .icon{
+    display: none;
+  }
+  
+  .enter-market{
+    
+    
+      font-size: 3vw;
+      
+  
+      
+  
+
+    
+}
+
+  
+}
 
